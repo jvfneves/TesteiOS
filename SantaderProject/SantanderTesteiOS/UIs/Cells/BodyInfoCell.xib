@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="BodyInfoCell" selectionStyle="none" indentationWidth="10" reuseIdentifier="BodyInfoCell" id="KGk-i7-Jjw" customClass="BodyInfoCell" customModule="SantanderTesteiOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="467" height="81"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="467" height="80.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sly-Sv-N50">
+                        <rect key="frame" x="0.0" y="0.0" width="467" height="80.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7pJ-pF-ykL">
+                                <rect key="frame" x="0.0" y="0.0" width="327" height="80.5"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                <color key="textColor" red="0.67450980392156867" green="0.67450980392156867" blue="0.67450980392156867" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="ecY-TO-VaP">
+                                <rect key="frame" x="327" y="0.0" width="140" height="80.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rNy-hS-guR">
+                                        <rect key="frame" x="0.0" y="0.0" width="43.5" height="80.5"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="8" maxY="0.0"/>
+                                        <state key="normal" title="Baixar" image="arrowDownRed">
+                                            <color key="titleColor" red="0.85490196078431369" green="0.0039215686274509803" blue="0.0039215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="actDownload:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="8k7-cm-BUR"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0,0%" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="hW6-HN-KZg">
+                                        <rect key="frame" x="43.5" y="0.0" width="96.5" height="80.5"/>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ecY-TO-VaP" firstAttribute="top" secondItem="Sly-Sv-N50" secondAttribute="top" id="8Gb-8x-j8G"/>
+                            <constraint firstItem="7pJ-pF-ykL" firstAttribute="leading" secondItem="Sly-Sv-N50" secondAttribute="leading" id="BRe-Xf-pac"/>
+                            <constraint firstAttribute="trailing" secondItem="ecY-TO-VaP" secondAttribute="trailing" id="Dfp-zn-RPu"/>
+                            <constraint firstItem="7pJ-pF-ykL" firstAttribute="top" secondItem="Sly-Sv-N50" secondAttribute="top" id="HUu-Sq-CmI"/>
+                            <constraint firstAttribute="bottom" secondItem="ecY-TO-VaP" secondAttribute="bottom" id="dcS-rp-n4X"/>
+                            <constraint firstAttribute="bottom" secondItem="7pJ-pF-ykL" secondAttribute="bottom" id="lc3-Xv-pbS"/>
+                            <constraint firstItem="ecY-TO-VaP" firstAttribute="width" secondItem="Sly-Sv-N50" secondAttribute="width" multiplier="0.3" id="p6D-1V-lkh"/>
+                            <constraint firstItem="ecY-TO-VaP" firstAttribute="leading" secondItem="7pJ-pF-ykL" secondAttribute="trailing" id="v1n-K5-ioo"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Sly-Sv-N50" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="2qb-LO-PsW"/>
+                    <constraint firstAttribute="trailing" secondItem="Sly-Sv-N50" secondAttribute="trailing" id="Hwi-xQ-w2v"/>
+                    <constraint firstAttribute="bottom" secondItem="Sly-Sv-N50" secondAttribute="bottom" id="TRX-8c-o0N"/>
+                    <constraint firstItem="Sly-Sv-N50" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="uv5-ZG-XMC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btDownload" destination="rNy-hS-guR" id="tEs-js-bTC"/>
+                <outlet property="lbName" destination="7pJ-pF-ykL" id="LUY-h8-1lK"/>
+                <outlet property="lbPercentage" destination="hW6-HN-KZg" id="V4F-pE-E6o"/>
+            </connections>
+            <point key="canvasLocation" x="107.5" y="72.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrowDownRed" width="13" height="13"/>
+    </resources>
+</document>
