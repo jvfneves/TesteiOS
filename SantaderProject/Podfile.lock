@@ -1,0 +1,24 @@
+PODS:
+  - AKMaskField (2.0.3)
+  - Cartography (3.0.2)
+  - IQKeyboardManagerSwift (5.0.8)
+
+DEPENDENCIES:
+  - AKMaskField
+  - Cartography (~> 3.0)
+  - IQKeyboardManagerSwift (~> 5.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AKMaskField
+    - Cartography
+    - IQKeyboardManagerSwift
+
+SPEC CHECKSUMS:
+  AKMaskField: b6d147524813e62cd3f15475fa2200ce7a3d2620
+  Cartography: 231190d7d0b3107ce8d67c54189f059a509b3760
+  IQKeyboardManagerSwift: 2e7dc7f98c111458c1ea2b373f893e8cf95e2b97
+
+PODFILE CHECKSUM: 9d5a28440e83cf9b189db75183bf6c1ee1dd6b6f
+
+COCOAPODS: 1.5.3
